@@ -1,0 +1,12 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: rails-build-pipeline
+spec:
+  tasks:
+    - name: build-and-push
+      taskRef:
+        name: kaniko
+      params:
+        - name: IMAGE
+          value: docker.io/dikachi.ogalabu/devops-rails:latest

@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - appnet
+
+  web:
+    build: .
+    command: bash -c "rm -f tmp/pids/server.pid && rails db:prepare && rails s -b 0.0.0.0"
+    volumes:
+      - ./rails-app:/myapp
+    ports:
+      - "3000:3000"
+    environment:
+      DATABASE_URL: postgres://postgres:password@db:5432/postgres
+    depends_on:
+      - db
+    networks:
+      - appnet
+
+volumes:
+  pgdata:
+
+networks:
+  appnet:
