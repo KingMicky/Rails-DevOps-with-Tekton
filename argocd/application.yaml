@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/dikachi/devops-rails-assessment.git
+    repoURL: https://github.com/KingMicky/Rails-DevOps-with-Tekton.git
     targetRevision: HEAD
     path: k8s
   destination:

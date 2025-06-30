@@ -7,6 +7,6 @@ metadata:
     argocd.argoproj.io/secret-type: repository
 stringData:
   type: git
-  url: https://github.com/dikachi/devops-rails-assessment.git
-  username: your-github-username
-  password: your-github-token
+  url: https://github.com/KingMicky/Rails-DevOps-with-Tekton.git
+  username: .....
+  password: .....
