@@ -141,7 +141,7 @@ my-app/
 
 ## ✍️ Author
 
-- **Your Name**
+- **Okechukwu Onyedikachi Joshua**
 - [GitHub](https://github.com/KingMicky)
 
 ---
