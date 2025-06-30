@@ -14,7 +14,7 @@ This project demonstrates deploying a simple Ruby on Rails application with Post
 
 #### ▶️ Commands
 ```bash
-cd backend
+cd my-app
 docker-compose up --build
 ```
 
