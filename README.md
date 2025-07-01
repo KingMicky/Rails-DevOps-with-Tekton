@@ -121,11 +121,10 @@ Tekton will:
 
 ```
 my-app/
-├── rails-app/                  # Rails app & Dockerfile
-├── k8s/                      # Kubernetes manifests
-├── argo-apps/                # ArgoCD GitOps configs
-├── tekton/                   # Tekton pipeline files
-├── docker-compose.yml        # Local Docker Compose
+├── argocd/          # ArgoCD GitOps configuration files
+├── k8s/             # Kubernetes manifests
+├── rails-app/       # Ruby on Rails application source
+└── tekton/          # Tekton pipelines for CI/CD
 └── README.md
 ```
 
